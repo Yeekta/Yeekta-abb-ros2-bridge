@@ -28,5 +28,5 @@ Bu proje belirli bir işletim sistemi ve ROS 2 kombinasyonu üzerinde test edilm
 ### 💻 Test Edilen Ortam
 * **İşletim Sistemi:** Ubuntu 24.04.4 LTS (Noble Numbat)
 * **ROS 2 Dağıtımı:** ROS 2 Jazzy Jalisco
-* ** KULLANILAN DRİVER KAYNAKÇASI: ** [https://github.com/PickNikRobotics/abb_ros2/tree/jazzy](https://github.com/PickNikRobotics/abb_ros2/tree/jazzy)
-* ** MOVEIT KAYNAKÇASI: ** https://moveit.picknik.ai/jazzy/index.html
+* **KULLANILAN DRİVER KAYNAKÇASI:** https://github.com/PickNikRobotics/abb_ros2/blob/rolling/docs/README.md 
+* **MOVEIT KAYNAKÇASI:** https://github.com/PickNikRobotics/abb_ros2/blob/rolling/docs/README.md
