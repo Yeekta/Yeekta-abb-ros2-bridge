@@ -1,0 +1,15 @@
+MODULE ROS_Bridge
+    PERS bool move_flag := FALSE;
+    PERS jointtarget ros_target := [[0,0,0,0,0,0],[9E9,9E9,9E9,9E9,9E9,9E9]];
+
+    PROC main()
+        WHILE TRUE DO
+            IF move_flag = TRUE THEN
+                TPWrite "--- ROS SIGNAL RECEIVED! ---";
+                MoveAbsJ ros_target, v50, fine, tool0;
+                move_flag := FALSE;
+            ENDIF
+            WaitTime 0.1;
+        ENDWHILE
+    ENDPROC
+ENDMODULE

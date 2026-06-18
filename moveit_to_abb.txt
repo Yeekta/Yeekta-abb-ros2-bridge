@@ -1,0 +1,14 @@
+ros2 run abb_rws_client rws_client --ros-args     -p robot_ip:="192.168.125.1"     -p robot_port:=80     -p no_connection_timeout:=false     -r /rws/joint_states:=/joint_states
+
+
+
+
+ros2 launch abb_bringup abb_moveit.launch.py     robot_xacro_file:=irb1200_5_90.xacro     support_package:=abb_irb1200_support     moveit_config_package:=abb_irb1200_5_90_moveit_config     moveit_config_file:=abb_irb1200_5_90.srdf.xacro
+
+
+
+
+python3 moveit_to_abb.py
+
+
+
